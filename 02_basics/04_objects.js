@@ -68,3 +68,30 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('islogin')); //checks if the object has the particular property/key or not 
 
+const course = {
+    coursename: "JS",
+    price : "99999",
+    courseInstructor: "Sid"
+}
+
+// course.courseInstructor
+//destructuring
+const {courseInstructor: inst} = course
+console.log(inst);
+
+//JSON is basically an object with out name
+
+/*
+{
+    "name": "sid",
+    "job": "dev",
+} 
+
+[
+    {};
+    {};
+    {}
+]
+
+
+*/
