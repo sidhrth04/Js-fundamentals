@@ -12,5 +12,57 @@ promiseOne.then(function(){
 })
 
 new Promise(function(resolve,reject){
-    
+    setTimeout(function(){
+        console.log("Async Task 2");
+        resolve()
+    },1000)
+}).then(function(){
+    console.log("Async Task Resolved");
 })
+
+const promiseThree = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve({username:"Sid",email:"sid@gmail.con"})
+    },1000)
+})
+
+promiseThree.then(function(user){
+    console.log(user);
+})
+
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username:"sid", password:"sid123"})
+        }
+        else{
+            reject("Error:404")
+        }
+    },1000)
+})
+
+promiseFour.then((user)=>{
+    console.log(user);
+    return user.username
+}).then((username)=>{
+    console.log(username);
+}).catch(function(error){
+    console.log(error);
+}).finally(()=>{console.log("Promise Completed")})
+
+const promiseFive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username:"Js", password:"sid123"})
+        }
+        else{
+            reject("Error:jS")
+        }
+    },1000)
+})
+
+async function consumePromiseFive(){
+    const response  = await promiseFive
+}
