@@ -9,7 +9,7 @@
 ## why use OOP
 
 ## parts of OOP
-Object literal 
+Object literal  
 
 - Constructor function
 - Prototypes
