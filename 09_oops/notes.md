@@ -3,7 +3,7 @@
 ## OOP
 
 ## Object
-- collection of properties and methods
+- collection of properties and methodss
 - toLowerCase
  
 ## why use OOP
