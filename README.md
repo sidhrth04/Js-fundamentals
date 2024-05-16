@@ -1,4 +1,4 @@
 # Js-fundamentals
-A Code repo for learning Javascript from scratch. 
+A Code repo for learning Javascript from scratch.  
  
  
